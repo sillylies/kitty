@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Disable DevTools Script -->
+  <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+  
+  <!-- Title and Fonts -->
+  
+  <title>enact</title>
+  <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
+  
+  <!-- Favicon Link (Change 'favicon.ico' to your custom file) -->
+    <link rel="icon" type="image/x-icon" href="icons/kirai.png">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="wallpaper">
+
+  <!-- Navigation Links (Positioned at the top) -->
+  <div class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="members.html">Members</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="center-screen">
+    <div class="initial-container">
+      <div class="box-contain">
+        <div class="box-brrr">
+          <img src="pfps/enact.png" class="pfp" alt="enact profile picture">
+          <h3>
+            <span style="color: #f0bb2b;">•</span> enact 
+            <span style="color: #f0bb2b;">•</span>
+          </h3>
+          <p>.</p>
+          <p class="socials-title">Socials</p>
+          <a href="https://doxbin.net/user/enact" target="_blank" rel="noopener noreferrer" class="social-icon">
+            <img src="socials/dbin.png" alt="Doxbin" height="40px">
+          </a>
+          <a href="https://t.me/en1ct" target="_blank" rel="noopener noreferrer" class="social-icon">
+            <img src="socials/telegram.png" alt="Telegram" height="35px">
+          </a>
+          
+          </a>          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Music Player -->
+  <audio id="background-music" autoplay loop>
+    <source src="music/background-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <!-- Title Animation Script -->
+  <script>
+    const titles = ["e", "en", "ena", "enac", "enact"];
+    let currentTitleIndex = 0;
+
+    function changeTitle() {
+      document.title = titles[currentTitleIndex];
+      currentTitleIndex = (currentTitleIndex + 1) % titles.length;
+    }
+
+    setInterval(changeTitle, 600);
+  </script>
+</body>
+</html>
