@@ -4,10 +4,10 @@
     <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hi</title>
+    <title>:(</title>
     <link rel="icon" type="image/x-icon" href="icons/dead.png">
-    <meta property="og:title" content="best website fr">
-    <meta property="og:description" content="">
+    <meta property="og:title" content="gone">
+    <meta property="og:description" content=":(">
     <style>
         body {
             margin: 0;
@@ -20,7 +20,54 @@
             align-items: center;
             height: 100vh;
             flex-direction: column;
-            text-align: center; /* Ensures all text is centered */
+            text-align: center;
+        }
+
+       
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            transition: opacity 0.5s ease;
+        }
+
+        .overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .overlay .start-button {
+            padding: 15px 30px;
+            font-size: 24px;
+            color: #865CD7;
+            background-color: black;
+            border: 2px solid #865CD7;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .overlay .start-button:hover {
+            color: white;
+            transform: scale(1.1);
+        }
+
+        
+        .container {
+            display: none;
+            text-align: center;
+        }
+
+        img {
+            max-width: 60%;
+            height: auto;
+            margin-bottom: 20px;
         }
 
         .text {
@@ -35,11 +82,32 @@
             text-decoration: none;
             font-size: 16px;
             transition: color 0.3s ease, transform 0.3s ease;
+            position: relative;
+            display: inline-block;
         }
 
         a:hover {
             color: #ffffff;
             transform: scale(1.1);
+        }
+
+        a::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background: url("https://assets.guns.lol/sparkle_blue.gif") no-repeat center;
+            background-size: contain;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        a:hover::before {
+            opacity: 1;
         }
 
         h1 {
@@ -53,23 +121,52 @@
         audio {
             margin-top: 20px;
         }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        img {
+            animation: float 3s ease-in-out infinite;
+        }
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Kittyhackers.lol</h1>
+    
+    <div class="overlay" id="overlay">
+        <button class="start-button" onclick="startSite()">Click to Start</button>
+    </div>
+
+    
+    <div class="container" id="mainContent">
+        <img src="socials/Images/kittyhacker.png" alt="Kittyhackers Image"> 
+
+        <h1 title="Kittyhackers.lol">Kittyhackers.lol</h1>
         <h3>Kittyhackers;</h3>
         <p>Members below.</p>
-        <a href="enact.html" target="_blank">Enact</a><br>
-        <a href="kirai.html" target="_blank">Kirai</a><br>
-        <a href="toenail.html" target="_blank">Toenail</a><br>
+        <a href="enact.html">Enact</a>
+        <a href="kirai.html">Kirai</a>
+        <a href="toenail.html">Toenail</a>
         <div class="text">
-            were spooky kitty hackers fr
+            we're spooky kitty hackers fr
         </div>
         <audio autoplay loop>
             <source src="japan.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
     </div>
+
+    <script>
+        function startSite() {
+            
+            document.getElementById('overlay').classList.add('hidden');
+
+           
+            document.getElementById('mainContent').style.display = 'block';
+        }
+    </script>
 </body>
 </html>

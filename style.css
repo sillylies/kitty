@@ -5,11 +5,6 @@
     color: white;
 }
 
-@font-face {
-    font-family: 'HelpMe';
-    src: url('fonts/HelpMe.ttf') format('truetype');
-  }
-  
 body {
     margin: 0;
     padding: 0;
@@ -23,58 +18,58 @@ body {
     height: 100vh;
 }
 
-/* Navigation Bar Styling */
+
 .nav-bar {
     position: fixed;
-    top: 10px;  /* Distance from the top */
+    top: 10px;  
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 20px;
-    z-index: 10;  /* Ensure buttons appear above content */
+    z-index: 10; 
     font-size: 18px;
 }
 
 .nav-bar a {
     text-decoration: none;
-    color: white;  /* Default color is white */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+    color: white;  
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 .nav-bar a.selected {
-    color: #ffffff;  /* Highlight color for active link */
-    text-decoration: underline; /* Add underline for selected link */
+    color: #ffffff;  
+    text-decoration: underline; 
 }
 
-/* Home Button Specific Styling */
+
 .nav-bar a.home {
-    color: white; /* Ensure Home button is white by default */
+    color: white; 
 }
 
-/* Hover Effect */
+
 .nav-bar a:hover {
-    color: #865CD7;  /* Change color on hover */
-    transform: scale(1.1);  /* Slightly enlarge the link on hover */
+    color: #865CD7;  
+    transform: scale(1.1);  
 }
 
-/* Social Icon Hover Effect */
+
 .social-icon img {
-    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
+    transition: transform 0.3s ease, filter 0.3s ease; 
 }
 
 .social-icon:hover img {
-    transform: scale(1.1);  /* Slightly enlarge the icon */
-    filter: brightness(1.3);  /* Make the icon slightly brighter on hover */
+    transform: scale(1.1);  
+    filter: brightness(1.3);  
 }
 
-/* Social Icon Alignment */
+
 .social-icon {
-    margin-right: 10px; /* Space between icons */
-    display: inline-block; /* Ensure icons are displayed inline */
+    margin-right: 10px; 
+    display: inline-block; 
 }
 
 .socials-title {
-    margin-bottom: 10px; /* Adjust space between title and icons */
+    margin-bottom: 10px; 
 }
 
 pre {
@@ -188,19 +183,6 @@ pre {
     }
 }
 
-.center-screen a {
-    text-decoration: none;  /* Remove underline from the "kirai" link */
-}
 
-/* Shared hover effect */
-.hover-effect {
-    text-decoration: none; /* Remove underline */
-    color: white; /* Default color */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
-  }
-  
-  .hover-effect:hover {
-    color: #865CD7; /* Change color on hover */
-    transform: scale(1.1); /* Slightly enlarge on hover */
-  }
-  
+
+

@@ -1,106 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Disable DevTools Script -->
   <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
-
-  <link rel="icon" type="image/x-icon" href="icons/members.png">
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Include Fonts -->
+  
+  <!-- Title and Fonts -->
+  <title>members</title>
   <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
-  <style>
-    @font-face {
-      font-family: 'HelpMe';
-      src: url('/fonts/HelpMe.ttf') format('truetype');
-    }
-
-    .custom-font {
-      font-family: 'HelpMe', sans-serif;
-      color: white;
-      font-size: 40px;
-      text-align: center;
-      font-weight: normal;
-    }
-
-    /* Navigation Bar Styling */
-    .nav-bar a {
-      font-family: 'VCR OSD Mono', sans-serif; /* Apply VCR OSD Mono font */
-      color: white; /* Default color */
-      text-decoration: none;
-      transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
-    }
-
-    .nav-bar a:hover {
-      color: #865CD7; /* Change color on hover */
-      transform: scale(1.1); /* Slightly enlarge the link on hover */
-    }
-
-    .nav-bar a.selected {
-      text-decoration: underline; /* Add underline for active link */
-    }
-
-    /* Prevent underline for the "kirai" link */
-    .center-screen a {
-      text-decoration: none; /* Remove underline */
-    }
-
-    /* Optional: Add hover effect for "kirai" link */
-    .center-screen a:hover {
-      color: #865CD7; /* Change color on hover */
-    }
-  </style>
+  
+  <!-- Favicon Link -->
+  <link rel="icon" type="image/x-icon" href="icons/members.png">
+  
+  
+  <link rel="stylesheet" href="members.css">
 </head>
-<body class="wallpaper">
+<body class="wallpaper members-page">
 
+  <script src="members.js"></script>
+
+  
   <div class="nav-bar">
     <a href="index.html" class="home">Home</a>
     <a href="members.html" class="members selected">Members</a>
-  </div>  
-
-  <div class="center-screen">
-    <h1 class="custom-font">kittyhackers</h1>
-    <h2>
-    <img src="ascii/cat.png" alt="kirai profile picture">
-    <h2>
-      <h3>
-        <a href="kirai" class="hover-effect">kirai</a>
-      </h3>
-      <h3>
-        <a href="enact.html" class="hover-effect">enact</a>
-      </h3>
-      <h3>
-        <a href="toenail.html" class="hover-effect">toenail</a>
-      </h3>
-      <h3>
-        <a href="denial.html" class="hover-effect">denial</a>
-      </h3>
-      
   </div>
 
-  <style>
-    .center-screen h1 {
-      margin-bottom: 10px; /* Adjust spacing as needed */
-    }
-  </style>
+  <div class="center-screen">
+    <div class="container" id="mainContent">
+      <img src="pfps/kittyhackers.png" alt="Kittyhackers Image">
+      <img src="pfps/cathack.png" alt="Text Cat">
+     <a href="toenail.html">Toenail</a>
+     <a href="enact.html">Enact</a>
+     <a href="kirai.html">Kirai</a>
+    </div>
+  </div> 
 
-  <style>
-    .center-screen h2 {
-      margin-bottom: 20px; /* Adjust spacing as needed */
-    }
-  </style>
-
-  <style>
-    .center-screen h3 {
-      margin-bottom: -10px; /* Adjust spacing as needed */
-    }
-  </style>
-
-
+  
   <audio id="background-music" autoplay loop>
     <source src="music/background-music.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
+  
   <script>
     const titles = ["m", "me", "mem", "memb", "memb", "membe", "member", "members"];
     let currentTitleIndex = 0;
@@ -114,4 +54,3 @@
   </script>
 </body>
 </html>
-
