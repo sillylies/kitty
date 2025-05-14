@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&amp;display=swap');
+@font-face {
+    font-family: 'Mono';
+    src: url('fonts/Mono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
-    font-family: 'VCR OSD Mono', sans-serif;
+    font-family: 'HelpMe', 'VCR OSD Mono', sans-serif;
     color: white;
 }
+
 
 body {
     margin: 0;
@@ -50,15 +56,16 @@ body {
     text-decoration: underline; 
 }
 
+
 .nav-bar a.home {
     color: white; 
 }
 
+
 .nav-bar a:hover {
-    color: #865CD7; 
+    color: #865CD7;  
     transform: scale(1.1);  
 }
-
 
 .social-icon img {
     transition: transform 0.3s ease, filter 0.3s ease; 
@@ -138,15 +145,6 @@ a {
     font-size: 16px;
     transition: all 0.3s ease-in-out; 
 }
-
-
-a:hover {
-    color: #ffffff;  
-    transform: scale(1.1);  
-    text-shadow: 0 0 10px #865CD7, 0 0 20px #865CD7, 0 0 30px #865CD7, 0 0 40px #865CD7; /* Glowing effect */
-}
-
-
 
 .fade-in-image {
     animation: fadeIn 3s;
@@ -253,12 +251,4 @@ html, body {
     padding: 0;
     height: 100%;
 }
-
-.custom-font {
-    font-family: 'HelpMe', sans-serif;
-    color: white;
-    font-size: 40px;
-    text-align: center;
-    font-weight: normal;
-  }
 
