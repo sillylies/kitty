@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&amp;display=swap');
+@font-face {
+    font-family: 'Mono';
+    src: url('fonts/Mono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
-    font-family: 'VCR OSD Mono', sans-serif;
+    font-family: 'HelpMe', 'VCR OSD Mono', sans-serif;
     color: white;
 }
+
 
 body {
     margin: 0;
@@ -12,7 +18,7 @@ body {
 }
 
 .wallpaper {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url(wallpaper.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url(wallpapers/enact.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -48,9 +54,10 @@ body {
 
 
 .nav-bar a:hover {
-    color: #865CD7; 
+    color: #865CD7;  
     transform: scale(1.1);  
 }
+
 
 .social-icon img {
     transition: transform 0.3s ease, filter 0.3s ease; 
@@ -89,7 +96,7 @@ pre {
 
 
 .box-contain {
-    position: relative;
+    position: relative; 
     display: flex;
     margin-top: 1em;
     width: 500px;
@@ -105,13 +112,29 @@ pre {
     transition: transform 0.1s ease; 
 }
 
+.box-contain-social {
+    position: relative; 
+    display: flex;
+    margin-top: 1em;
+    width: 190px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #C5C6D3;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3), 0px 0px 15px rgba(255, 255, 255, 0.1);
+    transform-style: preserve-3d; 
+    transition: transform 0.1s ease; 
+}
 
 
 
 
 .pfp {
     width: 110px;
-    height: auto;
+    height: 110;
     border-radius: 50%;
     margin: 0 auto 20px;
     padding: 5px; 
@@ -123,6 +146,7 @@ h3, p {
     color: #C5C6D3;
     text-align: center;
 }
+
 
 a {
     margin: 0 10px; 
@@ -168,7 +192,6 @@ a:hover {
     100% { opacity:1; }
 }
 
-
 @media (max-width: 600px) {
     html, body {
         overflow-x: hidden;
@@ -205,14 +228,14 @@ a:hover {
     z-index: 1000;  
   }
   
- 
+  
   .sparkle {
     position: absolute;
     width: 10px;
     height: 10px;
     background-color: white;
     border-radius: 50%;
-    animation: sparkle-animation 1s ease-out forwards; 
+    animation: sparkle-animation 1s ease-out forwards;  
     opacity: 0;  
   }
   
@@ -224,7 +247,21 @@ a:hover {
     }
     100% {
       transform: scale(3);  
-      opacity: 0; 
+      opacity: 0;  
     }
   }
   
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #C5C6D3;
+    display: inline-block;
+    background-image: url('https://assets.guns.lol/sparkle_yellow.gif');
+    padding: 2px 8px;
+  }
+
+  .dot {
+    color: #ffc800;
+    font-size: 24px;
+    margin: 0 -10px;
+  }

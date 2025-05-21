@@ -6,40 +6,76 @@
   
   <!-- Title and Fonts -->
   <title>members</title>
-  <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
-  
-  <!-- Favicon Link -->
+
+  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="icons/members.png">
-  
-  
+
+  <!-- External CSS -->
   <link rel="stylesheet" href="members.css">
+
+  <style>
+    h1 {
+      font-family: 'HelpMe', sans-serif;
+    }
+  </style>
 </head>
+
+
+
 <body class="wallpaper members-page">
-
-  <script src="members.js"></script>
-
-  
-    <div class="nav-bar">
-      <a href="index.html">Home</a>
-      <a href="members.html">Members</a>
-    </div>
+  <!-- Navigation -->
+  <div class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="members.html">Members</a>
+  </div>
 
 
+
+
+
+  <!-- Main Content -->
   <div class="center-screen">
     <div class="container" id="mainContent">
-      <p style="font-family: 'HelpMe', sans-serif;">This is inline HelpMe font text</p>
+      <h1>kittyhackers</h1>
 
+      
+        <div class="members-grid">
+  <div class="member-card">
+    <a href="enact.html">
+      <img src="pfps/enact.png" alt="Enact" class="member-pfp">
+      <div class="member-name">Enact</div>
+      <p class="member-role">goofball</p>
+    </a>
+  </div>
+
+  <div class="member-card">
+    <a href="kirai.html">
+      <img src="pfps/kirai.png" alt="Kirai" class="member-pfp">
+      <div class="member-name">Kirai</div>
+      <p class="member-role">dumbass</p>
+    </a>
+  </div>
+
+  <div class="member-card">
+    <a href="toenail.html">
+      <img src="pfps/toenail.png" alt="Toenail" class="member-pfp">
+      <div class="member-name">Toenail</div>
+      <p class="member-role">spooky</p>
+    </a>
+    
+  </div>
+</div>
 
     </div>
   </div> 
 
-  
+
   <audio id="background-music" autoplay loop>
     <source src="music/background-music.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
-  
+
   <script>
     const titles = ["m", "me", "mem", "memb", "memb", "membe", "member", "members"];
     let currentTitleIndex = 0;
@@ -51,5 +87,8 @@
 
     setInterval(changeTitle, 600);
   </script>
+
+
+  <script src="members.js"></script>
 </body>
 </html>

@@ -4,10 +4,10 @@
     <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>:(</title>
+    <title></title>
     <link rel="icon" type="image/x-icon" href="icons/dead.png">
-    <meta property="og:title" content="gone">
-    <meta property="og:description" content=":(">
+    <meta property="og:title" content="cool biolink fr">
+    <meta property="og:description" content="">
     <style>
         body {
             margin: 0;
@@ -20,47 +20,6 @@
             align-items: center;
             height: 100vh;
             flex-direction: column;
-            text-align: center;
-        }
-
-       
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 999;
-            transition: opacity 0.5s ease;
-        }
-
-        .overlay.hidden {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        .overlay .start-button {
-            padding: 15px 30px;
-            font-size: 24px;
-            color: #865CD7;
-            background-color: black;
-            border: 2px solid #865CD7;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        .overlay .start-button:hover {
-            color: white;
-            transform: scale(1.1);
-        }
-
-        
-        .container {
-            display: none;
             text-align: center;
         }
 
@@ -136,9 +95,6 @@
 </head>
 <body>
     
-    <div class="overlay" id="overlay">
-        <button class="start-button" onclick="startSite()">Click to Start</button>
-    </div>
 
     
     <div class="container" id="mainContent">
@@ -159,14 +115,5 @@
         </audio>
     </div>
 
-    <script>
-        function startSite() {
-            
-            document.getElementById('overlay').classList.add('hidden');
-
-           
-            document.getElementById('mainContent').style.display = 'block';
-        }
-    </script>
 </body>
 </html>

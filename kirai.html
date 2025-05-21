@@ -1,94 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Disable DevTools -->
-    <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+<head>
+  <!-- Disable DevTools -->
+  <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
 
-    <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="「Cruel」">
-    <meta property="og:description" content="website">
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="kirai">
+  <meta property="og:description" content="separation">
 
-    <title>kirai</title>
+  <title>kirai</title>
 
-    <!-- 3rd party fonts -->
-    <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
+  <!-- 3rd party fonts -->
+  <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="kirai.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="kirai.css">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="socials/cruel.html">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon/kirai.png">
+</head>
 
-   
-    <div class="nav-bar">
-      <a href="index.html">Home</a>
-      <a href="members.html">Members</a>
-    </div>
+<body class="center-screen wallpaper">
 
-  </head>
-  <body class="center-screen wallpaper">
-    <div class="intial-container">
-      <div class="box-contain">
-        <div class="box-brrr">
-          <img src="pfps/kirai.png" class="pfp" alt="Kirai PFP"/>
-          <h3><span style="color: #865CD7">‎ ‎ ‎ • 
-        <h5 class="gray" style="font-size: 24px; margin: 0px 20px 0px 2px; padding-top: 0px; display: inline-block;color: #C5C6D3;font-weight: bold;background-image: url('https://assets.guns.lol/sparkle_yellow.gif');"> kirai
-          <span style="color: #865CD7;">•</span></h5></h3>
-          <p>
-          <p>they say only at the threshold of death we can see our lives clearly</p>
+  <div class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="members.html">Members</a>
+  </div>
 
-
-          </a>
+  <div class="box-contain">
+    <div class="box-brrr">
+      <div class="pfp-top">
+      <img src="pfps/kirai.png" class="pfp" alt="Kirai PFP"/>
+      </div>
+      <div>
+        <div class="top">
+        <span class="dot" style="color: #865CD7;">•</span>
+        <span class="name">kirai</span>
+        <span class="dot">•</span>
         </div>
       </div>
-    </div>
-
-
-      </head>
-  <body class="center-screen wallpaper">
-    <div class="intial-container">
-      <div class="box-contain-social">
-        <div class="box-brrr">
-           <!--doxbin-->
-          <a href="https://doxbin.net/user/sillylies" target="_blank" rel="noopener noreferrer" class="social-icon">
-            <img src="socials/doxbin.png" alt="Doxbin" height="40px">
-          </a>
-           <!--telegram-->
-          <a href="https://t.me/sillylies" target="_blank" rel="noopener noreferrer" class="social-icon">
-            <img src="socials/telegram.png" alt="Telegram" height="35px">
-          </a>
-           <!--open-->
-          <a href="https://twitter.com/silliestliar" target="_blank" rel="noopener noreferrer" class="social-icon">
-            <img src="socials/twitter.png" alt="Twitter" height="35px">
-          </a>
-
-
-        </div>
+      <div class="bottom">
+       <p class="typewriter">
+        <span id="line1" class="type-line"></span>
+         <br>
+        <span id="line2" class="type-line"></span>
+       </p>
+       </div>
       </div>
     </div>
+  </div>
 
-    <script>
-      var titles = ["k", "ki", "kir", "kira", "kirai"];
-      var currentTitleIndex = 0;
-      function changeTitle() {
-        document.title = titles[currentTitleIndex];
-        currentTitleIndex = (currentTitleIndex + 1) % titles.length;
-      }
-      setInterval(changeTitle, 700);
-    </script>
+  <div class="box-contain-social">
+    <div class="box-brrr">
+      <!-- Doxbin -->
+      <a href="https://doxbin.net/user/admin" target="_blank" rel="noopener noreferrer" class="social-icon">
+        <img src="socials/doxbin.png" alt="Doxbin" height="40px">
+      </a>
+      <!-- Telegram -->
+      <a href="https://t.me/simswappable" target="_blank" rel="noopener noreferrer" class="social-icon">
+        <img src="socials/telegram.png" alt="Telegram" height="35px">
+      </a>
+      <!-- Twitter -->
+      <a href="https://twitter.com/silliestliar" target="_blank" rel="noopener noreferrer" class="social-icon">
+        <img src="socials/twitter.png" alt="Twitter" height="35px">
+      </a>
+    </div>
+  </div>
 
-    
-    <script src="kirai.js"></script>
+  <script>
+    var titles = ["k", "ki", "kir", "kira", "kirai"];
+    var currentTitleIndex = 0;
+    function changeTitle() {
+      document.title = titles[currentTitleIndex];
+      currentTitleIndex = (currentTitleIndex + 1) % titles.length;
+    }
+    setInterval(changeTitle, 700);
+  </script>
 
-  
+  <script src="kirai.js"></script>
   <div id="sparkles-container"></div>
 
-    <audio autoplay loop>
-      <source src="music/kirai.mp3" type="audio/mp3">
-      Your browser does not support the audio element.
-    </audio>
-  </body>
+  <audio autoplay loop>
+    <source src="music/kirai.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+</body>
 </html>

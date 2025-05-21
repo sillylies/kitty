@@ -1,74 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    
-    <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+<head>
+  <!-- Disable DevTools -->
+  <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
 
-    <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="「Cruel」">
-    <meta property="og:description" content="website">
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="enact">
+  <meta property="og:description" content="Israeli">
 
-    <title>「Enact」</title>
+  <title>enact</title>
 
-    
-    <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
+  <!-- 3rd party fonts -->
+  <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
 
-    
-    <link rel="stylesheet" href="enact.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="enact.css">
 
-    
-    <link rel="icon" type="image/x-icon" href="socials/cruel.html">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon/enact.png">
 
-   
-    <div class="nav-bar">
-      <a href="index.html">Home</a>
-      <a href="members.html">Members</a>
-    </div>
+</head>
+<body class="center-screen wallpaper">
 
-  </head>
-  <body class="center-screen wallpaper">
-    <div class="intial-container">
-      <div class="box-contain">
-        <div class="box-brrr">
-          <img src="pfps/enact.jpg" class="pfp" alt="ToeNail PFP"/>
-          <h3><span style="color: rgb(255, 200, 0);">• <h5 class="gray" style="font-size: 24px; margin: 0px 20px 0px 2px; padding-top: 0px; display: inline-block;color: #C5C6D3;font-weight: bold;background-image: url('https://assets.guns.lol/sparkle_yellow.gif');"> enact  
-            <span style="color: #ffd700;background-image: url('https://assets.guns.lol/sparkle_yellow.gif');"></span>
-        </h5></h3>
-          <p>
-          <p>i make stuff</p>
-          <p style="font-size:10px;">--Socials--</p>
-          <a href="https://doxbin.net/user/rape" target="_blank" rel="noopener noreferrer">
-            <img src="socials/dbin.png" alt="Doxbin" height="30px">
-          </a>
-          <a href="https://t.me/en1ct" rel="noopener noreferrer">
-            <img src="socials/telegram.png" height="30px" alt="Telegram" height="30px">
-          </a>
-        </div>
+  <div class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="members.html">Members</a>
+  </div>
+
+  <div class="box-contain">
+    <div class="box-brrr">
+      <img src="pfps/enact.png" class="pfp" alt="Enact PFP"/>
+      <div>
+        <span class="dot">•</span>
+        <span class="name">enact</span>
+        <span class="dot">•</span>
       </div>
+      <p>I make stuff.</p>
     </div>
+  </div>
 
-    <script>
-      var titles = ["e", "en", "ena", "enac", "enact", ">", ">.", ">.<"];
-      var currentTitleIndex = 0;
-      function changeTitle() {
-        document.title = titles[currentTitleIndex];
-        currentTitleIndex = (currentTitleIndex + 1) % titles.length;
-      }
-      setInterval(changeTitle, 700);
-    </script>
+  <div class="box-contain-social">
+    <div class="box-brrr">
+      <!-- Doxbin -->
+      <a href="https://doxbin.net/user/AntiExtort" target="_blank" rel="noopener noreferrer" class="social-icon">
+        <img src="socials/doxbin.png" alt="Doxbin" height="40px">
+      </a>
+      <!-- Telegram -->
+      <a href="https://t.me/" target="_blank" rel="noopener noreferrer" class="social-icon">
+        <img src="socials/telegram.png" alt="Telegram" height="35px">
+      </a>
+      <!-- Twitter -->
+      <a href="https://twitter.com/EnactBF" target="_blank" rel="noopener noreferrer" class="social-icon">
+        <img src="socials/twitter.png" alt="Twitter" height="35px">
+      </a>
+    </div>
+  </div>
 
-   
-    <script src="enact.js"></script>
+  <script>
+    var titles = ["e", "en", "ena", "enac", "enact",];
+    var currentTitleIndex = 0;
+    function changeTitle() {
+      document.title = titles[currentTitleIndex];
+      currentTitleIndex = (currentTitleIndex + 1) % titles.length;
+    }
+    setInterval(changeTitle, 700);
+  </script>
 
-  
+  <script src="enact.js"></script>
   <div id="sparkles-container"></div>
 
-    <audio autoplay loop>
-      <source src="music/Radiohead_-_Creep.mp3" type="audio/mp3">
-      Your browser does not support the audio element.
-    </audio>
-  </body>
+  <audio autoplay loop>
+    <source src="music/enact.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+</body>
 </html>

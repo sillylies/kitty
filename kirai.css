@@ -110,6 +110,7 @@ pre {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3), 0px 0px 15px rgba(255, 255, 255, 0.1);
     transform-style: preserve-3d; 
     transition: transform 0.1s ease; 
+    min-height: 230px; /* adjust as needed */
 }
 
 .box-contain-social {
@@ -251,3 +252,41 @@ a:hover {
     }
   }
   
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #C5C6D3;
+    display: inline-block;
+    background-image: url('https://assets.guns.lol/sparkle_yellow.gif');
+    padding: 2px 8px;
+  }
+
+  .dot {
+    color: #865CD7;
+    font-size: 24px;
+    margin: 0 -10px;
+  }
+
+  .top {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 3px; /* raise name slightly */
+}
+
+  .pfp-top {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px; /* raise name slightly */
+}
+
+.bottom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 4px;
+  min-height: 50px; /* or however tall the text gets */
+}

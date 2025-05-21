@@ -1,15 +1,27 @@
 @font-face {
-    font-family: 'Mono';
-    src: url('fonts/Mono.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'HelpMe';
+    src: url('fonts/HelpMe.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Mono';
+    src: url('fonts/Mono.ttf') format('truetype');
+}
+
+/* Default for everything */
 * {
-    font-family: 'HelpMe', 'VCR OSD Mono', sans-serif;
+    font-family: 'Mono', sans-serif;
     color: white;
 }
 
+/* Use HelpMe only on h1 */
+h1 {
+  font-family: 'HelpMe', sans-serif;
+  font-size: 48px;
+  font-weight: normal; /* Makes it less bold */
+  text-align: center;  /* Centers the text */
+  margin-bottom: 20px;
+}
 
 body {
     margin: 0;
@@ -21,7 +33,7 @@ body {
 
 
 .wallpaper {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url(wallpapers/hacker.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(wallpapers/members.gif);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -49,16 +61,6 @@ body {
     text-decoration: none;
     color: white;  
     transition: color 0.3s ease, transform 0.3s ease; 
-}
-
-.nav-bar a.selected {
-    color: #ffffff;  
-    text-decoration: underline; 
-}
-
-
-.nav-bar a.home {
-    color: white; 
 }
 
 
@@ -97,9 +99,10 @@ pre {
 .center-screen {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;  /* align top instead of center */
     align-items: center;
     height: 100vh;
+    padding-top: 260px; /* push content down a bit from top */
 }
 
 
@@ -218,32 +221,8 @@ a {
 
 
 
-.center-screen #mainContent img {
-    position: relative;
-    top: -50px;  
-}
 
-#mainContent img {
-    transform: scale(0.7); 
-}
 
-#mainContent img {
-    width: -150px;
-    height: auto;
-    display: block;  
-    margin-bottom: 20px; 
-}
-
-#mainContent {
-    text-align: center; 
-}
-
-#mainContent img {
-    width: -150px;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px; 
-}
 
 html, body {
     overflow: hidden; 
@@ -252,3 +231,90 @@ html, body {
     height: 100%;
 }
 
+.members {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;  
+    font-size: 18px;
+}
+
+.members a {
+    text-decoration: none;
+    color: #865CD7;  
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.members a:hover {
+    color: #ffffff;  
+    transform: scale(1.1);  
+}
+
+
+.members-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 20px;
+}
+
+.member-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #C5C6D3;
+  border-radius: 10px;
+  padding: 15px;
+  width: 160px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3), 0px 0px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.member-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(134, 92, 215, 0.5);
+}
+
+.member-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.member-pfp {
+  display: block;         /* Make image block-level so margin works */
+  margin: 0 auto 10px;    /* Center horizontally, with 10px bottom margin */
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: black;
+  border: 2px solid #C5C6D3;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15), 0 0 8px rgba(134, 92, 215, 0.3);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.member-card:hover .member-pfp {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+
+.member-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #C5C6D3;
+  background-image: url('https://assets.guns.lol/sparkle_yellow.gif');
+  background-repeat: repeat;
+  background-size: contain;
+  padding: 3px 6px;
+  display: inline-block;
+}
+
+.member-role {
+  font-size: 12px;
+  color: #C5C6D3;
+  margin-top: 5px;
+}
